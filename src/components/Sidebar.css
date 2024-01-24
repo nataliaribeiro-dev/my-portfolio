@@ -1,0 +1,10 @@
+.name-visible {
+  opacity: 1; /* Define o nome como visível */
+  margin-left: 10px; /* Espaço entre o ícone e o nome */
+  font-size: small;
+}
+
+.name-hidden {
+  opacity: 0; /* Define o nome como invisível */
+}
+
