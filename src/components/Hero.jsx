@@ -38,10 +38,10 @@ export default function Hero() {
     >
 
       <Stack width={['60vw', '60vw', '100vw']} spacing={2}
-        mx={'auto'} py={6} px={6} ml={['auto', 'auto', '18%']}
+        mx={'auto'} py={6} px={6} ml={['auto', 'auto', '20%']}
         textAlign={['center', 'center', 'start']}
       >
-        <Heading fontSize={['30px', '40px', '64px']}
+        <Heading fontSize={['20px', '30px', '64px']}
           fontFamily={'Bebas Neue'}
           fontWeight={'bold'}
           color={'#ffbb2c'}
@@ -79,6 +79,7 @@ export default function Hero() {
               fontSize: isMobile ? '1vw' : '2vw',
               color: 'white',
               fontFamily: 'Bebas Neue, sans-serif',
+              letterSpacing: '2px',
             }}
 
             sequence={[

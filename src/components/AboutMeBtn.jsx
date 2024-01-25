@@ -23,7 +23,7 @@ export default function AboutMeBtn() {
           aria-label="Email"
           textDecoration="none"
         >
-          Chama
+          E-mail
         </Button>
       </Link>
 
@@ -43,7 +43,7 @@ export default function AboutMeBtn() {
             transform: 'scale(1.1)',
           }}
         >
-          Aqui!
+          Chat
         </Button>
       </Link>
     </ButtonGroup>
