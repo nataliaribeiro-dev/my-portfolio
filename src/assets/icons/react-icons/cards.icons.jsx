@@ -1,19 +1,19 @@
 import { BiLogoCss3, BiLogoJavascript, BiLogoReact } from "react-icons/bi";
 import { BiLogoHtml5 } from "react-icons/bi";
 import { SiChakraui } from "react-icons/si";
-import {BiLogoTypescript} from "react-icons/bi";
-import {FaNode} from "react-icons/fa";
-import {GrMysql} from "react-icons/gr";
-import {GiJesterHat} from "react-icons/gi";
-import {SiTestinglibrary} from "react-icons/si";
-import {BiLogoBootstrap} from "react-icons/bi";
-import {BiLogoRedux} from "react-icons/bi";
-import {SiExpress} from "react-icons/si";
-import {BsGit} from "react-icons/bs";
-import {AiOutlineCloudServer} from "react-icons/ai";
-import {BiLogoDocker} from "react-icons/bi";
-import {FaLinux} from "react-icons/fa";
-import {BiLogoGithub} from "react-icons/bi";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaNode } from "react-icons/fa";
+import { GrMysql } from "react-icons/gr";
+import { GiJesterHat } from "react-icons/gi";
+import { SiTestinglibrary } from "react-icons/si";
+import { BiLogoBootstrap } from "react-icons/bi";
+import { BiLogoRedux } from "react-icons/bi";
+import { SiExpress } from "react-icons/si";
+import { BsGit } from "react-icons/bs";
+import { AiOutlineCloudServer } from "react-icons/ai";
+import { BiLogoDocker } from "react-icons/bi";
+import { FaLinux } from "react-icons/fa";
+import { BiLogoGithub } from "react-icons/bi";
 
 const cardsData = [
   {
@@ -87,7 +87,7 @@ const cardsData = [
   {
     heading: 'Docker',
     icon: <BiLogoDocker />,
-  }  
+  }
 ];
 
 export default cardsData;
