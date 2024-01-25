@@ -23,7 +23,7 @@ export default function TopSetion() {
 
       <Button
         as="a"
-        href="https://drive.google.com/file/d/1l7YgY7W2PZ1Q0Z2VYpY6mY4Q7q5mQ5sQ/view?usp=sharing"
+        href="https://drive.google.com/file/d/1g4Grp-ey1TfGtsZWR0pFeQLiooIAxgEO/view?usp=drive_link"
         target="_blank"
         size="lg"
         fontFamily={'Bebas Neue'}

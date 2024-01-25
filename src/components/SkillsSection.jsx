@@ -5,7 +5,7 @@ import '@fontsource/bebas-neue';
 export default function SkillsSection() {
   return (
     <Flex
-      w="105vw"
+      w="110%"
       direction="column"
       justify="center"
       alignItems="center"
@@ -13,7 +13,6 @@ export default function SkillsSection() {
     >
 
       <Box className="section-title"
-        w={'100%'}
         display={'flex'}
         justifyContent={'center'}
         alignItems={'center'}
