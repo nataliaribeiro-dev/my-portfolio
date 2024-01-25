@@ -3,7 +3,6 @@ import { Text } from "@chakra-ui/react";
 export default function AboutMeText() {
      return (
           <>
-
                <Text fontSize={{ sm: "lg", md: "lg", lg: "lg" }}
                     textAlign="left"
                     color="#202020"
@@ -13,7 +12,6 @@ export default function AboutMeText() {
                     <br />
                     Em 2019, morei fora do país bucando não apenas aperfeiçoar minhas fluência em Inglês, mas também vivenciar outra cultura e expandir meus horizontes.<br />
                     <br />
-
                </Text>
 
                <Text fontSize={{ sm: "lg", md: "lg", lg: "lg" }}

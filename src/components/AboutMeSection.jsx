@@ -22,49 +22,39 @@ export default function AboutMeSection() {
       gap={8}
     >
       <Box
+        maxW={["18rem", "35rem", "65rem"]}
         display={'flex'}
-        justifyContent={'center'}
+        justifyContent={'space-around'}
         alignItems={'center'}
-        border={'1px solid #202020'}
-        gap={{ sm: 0, md: 0, lg: 8 }}
+        w={['50%', '50%', '50%']}
+        h={['50%', '50%', '50%']}
       >
-        <Box
-          display={'flex'}
-          justifyContent={'center'}
-          alignItems={'center'}
-          w={['50%', '50%', '50%']}
-          h={['50%', '50%', '50%']}
+        <Heading
+          p={0}
+          fontFamily={'Bebas Neue'}
+          fontSize={{ sm: "3xl", md: "4xl", lg: "5xl" }}
+          letterSpacing={'0.1rem'}
+          color="#202020"
+          className="section-title"
+          data-aos="fade-up"
+          transitionDelay={1000}
         >
-          <Heading
-            p={0}
-            fontFamily={'Bebas Neue'}
-            letterSpacing={'0.1rem'}
-            color="#202020"
-            className="section-title"
-            data-aos="fade-up"
-            transitionDelay={1000}
-          >
-            Olá, pode me chamar
-            <br />
-            de Nathy!
-          </Heading>
-        </Box>
-        <Image boxSize={['30%', '40%', '30%']}
+          Olá, pode me chamar
+          <br />
+          de Nathy!
+        </Heading>
+
+        <Image boxSize={['30%', '40%', '30%']} mt={6}
           src={meYellow}
           alt="Natalia Ribeiro"
         />
       </Box>
 
-      <Box maxW={["18rem", "35rem", "60rem"]}
-        m={{ left: 16, right: 16 }}
-        border={'1px solid #202020'}
-
-      >
-
+      <Box maxW={["18rem", "35rem", "65rem"]}>
         <AboutMeText />
+
         <AboutMeBtn />
       </Box>
-
     </Flex>
   );
 }
