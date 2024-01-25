@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AboutMeText from "./AboutMeText";
 import AboutMeBtn from "./AboutMeBtn";
 import '@fontsource/bebas-neue';
+import meYellow from '../assets/img/meYellowBg.png';
 
 export default function AboutMeSection() {
   useEffect(() => {
@@ -49,7 +50,7 @@ export default function AboutMeSection() {
           </Heading>
         </Box>
         <Image boxSize={['30%', '40%', '30%']}
-          src="src/assets/img/meYellowBg.png"
+          src={meYellow}
           alt="Natalia Ribeiro"
         />
       </Box>
