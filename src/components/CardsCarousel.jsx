@@ -42,19 +42,12 @@ function CardsCarousel() {
 							w={'30vw'}
 							h={'40vh'}
 							p={4} m="auto"
-							//  w={{ "sm": "55vw", "md": "60vw", "lg": "30vw" }}
-							// h={{ "sm": "60vh", "md": "50vh", "lg": "45vh" }}
 							key={index}>
 							<CardHeader>
-								<Heading size="md" textAlign="center">
+								<Heading size="md" textAlign="center" color={'#000'}>
 									{`${item.date} - ${item.title} `}
 								</Heading>
 							</CardHeader>
-							{/* <CardBody>
-                            <Text textAlign="justify" verticalAlign="middle">
-                                {item.description}
-                            </Text>
-                        </CardBody> */}
 							<CardFooter
 								display={'flex'}
 								flexDirection={'column'}
@@ -62,7 +55,7 @@ function CardsCarousel() {
 								alignItems={'center'}
 								gap={4}
 							>
-								<span>Tecnologias estudadas: </span>
+								<Text color={'#000'} fontWeight={'bold'}>Tecnologias estudadas: </Text>
 								<Stack justifyContent="justify" alignItems="center" flexDirection="row" flexWrap="wrap">
 									{item.badges.map((badge, index) => {
 										return <Badge colorScheme="orange" key={index}>{badge}</Badge>;
@@ -76,7 +69,6 @@ function CardsCarousel() {
 			</Box>
 		</Box >
 	);
-
 }
 
 export default CardsCarousel;
