@@ -5,6 +5,7 @@ import { Icon, Flex, Stack, Heading } from '@chakra-ui/react';
 import ImageHeroContainer from './ImageHeroContainer';
 import { useEffect, useState } from 'react';
 
+
 export default function Hero() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -36,10 +37,10 @@ export default function Hero() {
       alignItems={'center'}
     >
 
-      <Stack width={['60vw', '60vw', '100vw']} spacing={2} mx={'auto'} py={6} px={6} ml={['auto', 'auto', '18%']}
+      <Stack width={['60vw', '60vw', '100vw']} spacing={2}
+        mx={'auto'} py={6} px={6} ml={['auto', 'auto', '18%']}
         textAlign={['center', 'center', 'start']}
       >
-
         <Heading fontSize={['30px', '40px', '64px']}
           fontFamily={'Bebas Neue'}
           fontWeight={'bold'}
@@ -48,7 +49,6 @@ export default function Hero() {
           mb={['0', '0', '12px']}
           textAlign={['center', 'center', 'start']}
           letterSpacing={'6px'}
-
         > NATALIA RIBEIRO</Heading>
 
 
@@ -78,15 +78,13 @@ export default function Hero() {
               whiteSpace: 'pre-line',
               fontSize: isMobile ? '1vw' : '2vw',
               color: 'white',
-              fontFamily: 'Roboto mono',
-              fontWeight: '400'
+              fontFamily: 'Bebas Neue, sans-serif',
             }}
-
 
             sequence={[
               'Front-end', 800,
               'Back-end', 800,
-              `Desenvolvimento Web \n Humanizado.`, 500
+              `Desenvolvimento Web`, 500
             ]}
 
             repeat={Infinity}
@@ -94,7 +92,6 @@ export default function Hero() {
         </div>
       </Stack>
       <ImageHeroContainer />
-
 
     </Flex >
 
