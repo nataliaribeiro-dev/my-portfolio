@@ -147,9 +147,6 @@ export default function Projects() {
           </Slider>
         </Box >
 
-
-
-
         <Footer />
       </Flex >
 

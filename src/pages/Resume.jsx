@@ -1,9 +1,9 @@
-import { Box, Flex, Heading } from "@chakra-ui/react";
-import Footer from "../components/Footer";
-import TopSetion from "../components/TopSection";
 import '@fontsource/bebas-neue';
+import { Box, Flex, Heading } from "@chakra-ui/react";
 import CardsCarousel from "../components/CardsCarousel";
 import JobsCards from "../components/JobsCards";
+import BottonSection from '../components/BottonSection';
+import Footer from "../components/Footer";
 
 export default function Resume() {
   return (
@@ -70,7 +70,7 @@ export default function Resume() {
         </Flex>
       </section >
 
-      <TopSetion />
+      <BottonSection />
 
       <Footer />
 

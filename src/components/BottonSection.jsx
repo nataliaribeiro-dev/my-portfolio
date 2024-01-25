@@ -1,17 +1,17 @@
 import { Button, Flex, Heading } from "@chakra-ui/react"
 import '@fontsource/bebas-neue';
 
-export default function TopSetion() {
+export default function BottonSection() {
   return (
     <Flex
       w="105vw"
-      h={'280px'}
+      h={'250px'}
       direction="column"
       justify="center"
       alignItems="center"
       bg="#F2C744"
+      overflow={'hidden'}
       gap={2}
-
     >
       <Heading fontSize={'3xl'}
         fontFamily={'Bebas Neue'}
@@ -20,7 +20,6 @@ export default function TopSetion() {
       >
         Quer saber mais?
       </Heading>
-
       <Button
         as="a"
         href="https://drive.google.com/file/d/1g4Grp-ey1TfGtsZWR0pFeQLiooIAxgEO/view?usp=drive_link"
@@ -36,11 +35,9 @@ export default function TopSetion() {
         }}
         mb={{ sm: 24, md: 14, lg: 16 }}
         p={6}
-
       >
         Download CV
       </Button>
-
     </Flex >
   )
 }
