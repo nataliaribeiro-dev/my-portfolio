@@ -16,6 +16,8 @@ import { MdPhone, MdEmail, MdLocationOn } from 'react-icons/md';
 import ExternalLink from '../components/ExternaLink';
 import { BiLogoGithub, BiLogoGmail, BiLogoLinkedinSquare } from 'react-icons/bi';
 import '@fontsource/bebas-neue';
+import qrCode from '../assets/img/qrCode.jpeg';
+import meYellow from '../assets/img/meYellowBg.png';
 
 export default function Contact() {
   return (
@@ -46,7 +48,7 @@ export default function Contact() {
             <Avatar
               m={{ sm: 3, md: 3, lg: -16 }}
               size="2xl"
-              src="src/assets/img/meYellowBg.png"
+              src={meYellow}
               css={{
                 border: '2px solid white',
               }}
@@ -86,7 +88,7 @@ export default function Contact() {
                 <Image
                   boxSize={{ base: '35%', md: '60%', lg: '60%' }}
                   objectFit="cover"
-                  src="src/assets/img/qrCode.jpeg"
+                  src={qrCode}
                   alt="QR Code"
                 />
                 <VStack pl={0} spacing={3} alignItems="center">
