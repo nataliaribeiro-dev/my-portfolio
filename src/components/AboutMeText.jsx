@@ -1,5 +1,4 @@
 import { Text } from "@chakra-ui/react";
-import '../assets/css/AboutMeText.css'
 
 export default function AboutMeText() {
      return (
