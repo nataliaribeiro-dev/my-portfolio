@@ -10,6 +10,9 @@ import { BiLogoLinkedinSquare, BiLogoGmail, BiLogoGithub } from 'react-icons/bi'
 import ButtonFooter from './ButtonsFooter';
 
 export default function Footer() {
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <Box
       width="100%"
@@ -30,7 +33,7 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
 
-        <Text>© 2023 Desenvolvido por Natália Ribeiro</Text>
+        <Text>© {currentYear} - Desenvolvido por Natália Ribeiro</Text>
 
         <HStack spacing={6}>
 
