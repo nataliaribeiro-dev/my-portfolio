@@ -51,7 +51,6 @@ export default function Projects() {
 
         <Box
           height={'65vh'} width={'full'} overflow={'hidden'}>
-
           <link
             rel="stylesheet"
             type="text/css"
@@ -62,7 +61,7 @@ export default function Projects() {
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
           />
-          {/* Left Icon */}
+
           <IconButton
             aria-label="left-arrow"
             variant="ghost"
@@ -74,7 +73,7 @@ export default function Projects() {
             onClick={() => slider?.slickPrev()}>
             <BiLeftArrowAlt size="40px" />
           </IconButton>
-          {/* Right Icon */}
+
           <IconButton
             aria-label="right-arrow"
             variant="ghost"
@@ -86,7 +85,7 @@ export default function Projects() {
             onClick={() => slider?.slickNext()}>
             <BiRightArrowAlt size="40px" />
           </IconButton>
-          {/* Slider */}
+
           <Slider {...settings} ref={(slider) => setSlider(slider)}>
             {projectDetails.map((card, index) => (
               <Box
@@ -100,17 +99,23 @@ export default function Projects() {
                 display={'flex'}
                 justifyContent={'center'}
                 alignItems={'center'}
+                border={'2px solid red'}
               >
 
-                <Container size="container.lg" position={'relative'}
+                <Container border={'2px solid blue'}
+                  display={'flex'}
+                  justifyContent={'center'}
+                  alignItems={'center'}
+                  flexWrap={'wrap'}
+                  maxW={'xl'}
+                  height={'410px'}
                 >
                   <Stack
-                    mt={12}
-                    spacing={4}
-                    w={'full'}
-                    maxW={'lg'}
-                    position="absolute"
-
+                    spacing={10}
+                    border={'2px solid green'}
+                    textAlign={'center'}
+                    align={'center'}
+                    justifyContent={'center'}
                   >
                     <Heading
                       fontFamily={'Bebas Neue'}
