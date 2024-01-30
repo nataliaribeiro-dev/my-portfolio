@@ -99,10 +99,10 @@ export default function Projects() {
                 display={'flex'}
                 justifyContent={'center'}
                 alignItems={'center'}
-                border={'2px solid red'}
+                flexWrap={'wrap'}
               >
 
-                <Container border={'2px solid blue'}
+                <Container
                   display={'flex'}
                   justifyContent={'center'}
                   alignItems={'center'}
@@ -112,7 +112,6 @@ export default function Projects() {
                 >
                   <Stack
                     spacing={10}
-                    border={'2px solid green'}
                     textAlign={'center'}
                     align={'center'}
                     justifyContent={'center'}
@@ -127,7 +126,7 @@ export default function Projects() {
                       {card.text}
                     </Text>
                     <Text fontSize={{ base: 'md', lg: 'md' }} color="black">
-                      <span>Tecnologias utilizadas:</span> {card.tech}
+                      <strong>Tecnologias utilizadas:</strong> {card.tech}
                     </Text>
 
                     <ButtonGroup spacing={4}>
@@ -153,8 +152,8 @@ export default function Projects() {
         </Box >
 
         <Footer />
-      </Flex >
 
+      </Flex >
     </>
   );
 }

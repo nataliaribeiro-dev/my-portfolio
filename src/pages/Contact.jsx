@@ -1,5 +1,4 @@
 import {
-  Container,
   Flex,
   Box,
   Heading,
@@ -21,30 +20,32 @@ import meYellow from '../assets/img/meYellowBg.png';
 
 export default function Contact() {
   return (
-    <Container
+    <Flex
       bg="#f2c744"
-      maxW="full"
-      minH="100vh"
+      h={'100%'}
       display="flex"
       justifyContent="center"
       alignItems="center"
     >
-      <Flex>
+      <Flex
+        boxSizing='border-box'
+        w={'550px'}
+        border={'2px solid red'}
+        justifyContent="center">
         <Box
           w={{ sm: '60vw', md: '65vw', lg: '50vw' }}
-          h={{ sm: 'auto', md: 'auto', lg: 'auto' }}
           bg="#fff"
           color="#202020"
           borderRadius="lg"
-          m={{ sm: 4, md: 16, lg: 10 }}
+          m={{ sm: 4, md: 16, lg: 16 }}
           p={{ sm: 5, md: 5, lg: 18 }}
           display="flex"
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          border={'1px solid #202020'}
+          border={'2px solid #202020'}
         >
-          <Flex>
+          <Flex >
             <Avatar
               m={{ sm: 3, md: 3, lg: -16 }}
               size="2xl"
@@ -82,8 +83,6 @@ export default function Contact() {
                 flexDirection={{ base: 'column', sm: 'column', md: 'row', lg: 'row' }}
                 alignItems="center"
                 gap={6}
-              // border={'1px solid #202020'}
-              // boxSize={{ base: '100%', sm: '100%', md: '100%', lg: '100%' }}
               >
                 <Image
                   boxSize={{ base: '35%', md: '60%', lg: '60%' }}
@@ -91,29 +90,9 @@ export default function Contact() {
                   src={qrCode}
                   alt="QR Code"
                 />
-                <VStack pl={0} spacing={3} alignItems="center">
-                  <Button
-                    size={{ base: 'sm', sm: 'sm', md: 'md', lg: 'md' }}
-                    height="48px"
-                    width="200px"
-                    variant="ghost"
-                    color="#202020"
-                    cursor={"default"}
-                    leftIcon={<MdPhone color="purple" size="20px" />}
-                  >
-                    +55 (51) 99207-5245
-                  </Button>
-                  <Button
-                    size={{ base: 'sm', sm: 'sm', md: 'md', lg: 'md' }}
-                    height="48px"
-                    width="280px"
-                    variant="ghost"
-                    color="#202020"
-                    cursor={"default"}
-                    leftIcon={<MdEmail color="purple" size="20px" />}
-                  >
-                    nataliaribeiro.dev@gmail.com
-                  </Button>
+                <VStack
+                  border={'2px solid #202020'}
+                  pl={0} spacing={3} alignItems="center">
                   <Button
                     size={{ base: 'sm', sm: 'sm', md: 'md', lg: 'md' }}
                     height="48px"
@@ -176,6 +155,6 @@ export default function Contact() {
           </Wrap>
         </Box>
       </Flex>
-    </Container>
+    </Flex >
   );
 }
