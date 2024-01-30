@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <Flex
       bg="#f2c744"
-      h={'100%'}
+      h={'100vh'}
       display="flex"
       justifyContent="center"
       alignItems="center"
