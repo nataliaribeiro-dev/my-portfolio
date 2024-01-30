@@ -33,28 +33,24 @@ function CardsCarousel() {
 				flexWrap={'nowrap'}
 				height={'65vh'}
 				gap={10}
-
 			>
 
 				{resumeData[0].certificates.map((item, index) => {
 					return (
 						<Card as={motion.div} className="card-item"
+							display={'flex'}
+							justifyContent={'center'}
+							alignItems={'center'}
+							border={'2px solid #202020'}
 							w={'30vw'}
 							h={'40vh'}
-							p={4} m="auto"
 							key={index}>
 							<CardHeader>
 								<Heading size="md" textAlign="center" color={'#000'}>
 									{`${item.date} - ${item.title} `}
 								</Heading>
 							</CardHeader>
-							<CardFooter
-								display={'flex'}
-								flexDirection={'column'}
-								justifyContent={'center'}
-								alignItems={'center'}
-								gap={4}
-							>
+							<CardFooter gap={4}>
 								<Text color={'#000'} fontWeight={'bold'}>Tecnologias estudadas: </Text>
 								<Stack justifyContent="justify" alignItems="center" flexDirection="row" flexWrap="wrap">
 									{item.badges.map((badge, index) => {
