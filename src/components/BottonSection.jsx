@@ -22,7 +22,7 @@ export default function BottonSection() {
       </Heading>
       <Button
         as="a"
-        href="https://drive.google.com/file/d/1g4Grp-ey1TfGtsZWR0pFeQLiooIAxgEO/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1EHj5wfNmkvUx05NlV4vzJ_CRJYE-93ti/view?usp=sharing"
         target="_blank"
         size="lg"
         fontFamily={'Bebas Neue'}
