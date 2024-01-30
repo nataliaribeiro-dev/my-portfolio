@@ -30,7 +30,6 @@ export default function Contact() {
       <Flex
         boxSizing='border-box'
         w={'550px'}
-        border={'2px solid red'}
         justifyContent="center">
         <Box
           w={{ sm: '60vw', md: '65vw', lg: '50vw' }}
@@ -91,7 +90,6 @@ export default function Contact() {
                   alt="QR Code"
                 />
                 <VStack
-                  border={'2px solid #202020'}
                   pl={0} spacing={3} alignItems="center">
                   <Button
                     size={{ base: 'sm', sm: 'sm', md: 'md', lg: 'md' }}
